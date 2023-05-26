@@ -1,4 +1,5 @@
 CC 				= gcc
+.PHONY: master slave client_time client_txnum
 
 master: master/master.c batch/batch.c batch/batch_list.c utils/bytes.c client_interface/client_interface.c utils/configuration.c utils/log.c master/master_sequencer.c utils/message.c \
         scheduler/read_scheduler.c utils/storage.c network/tcp/tcp_client.c network/tcp/tcp_server.c utils/timer.c tx/transaction.c tx/transaction_list.c scheduler/write_scheduler.c \
